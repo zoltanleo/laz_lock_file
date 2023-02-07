@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 339
+  Height = 117
+  Top = 236
+  Width = 454
+  Caption = 'Form1'
+  ClientHeight = 117
+  ClientWidth = 454
+  OnCreate = FormCreate
+  LCLVersion = '2.3.0.0'
+  object FileNameEdit1: TFileNameEdit
+    AnchorSideLeft.Control = Owner
+    AnchorSideTop.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    Left = 10
+    Height = 23
+    Top = 10
+    Width = 434
+    FileName = 'FileNameEdit1'
+    FilterIndex = 0
+    HideDirectories = False
+    ButtonWidth = 23
+    NumGlyphs = 1
+    Anchors = [akTop, akLeft, akRight]
+    BorderSpacing.Around = 10
+    MaxLength = 0
+    TabOrder = 0
+    Text = 'FileNameEdit1'
+  end
+  object Button1: TButton
+    AnchorSideLeft.Control = Owner
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 10
+    Height = 25
+    Top = 82
+    Width = 126
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.Around = 10
+    Caption = 'Button1'
+    OnClick = Button1Click
+    TabOrder = 1
+  end
+  object ComboBox1: TComboBox
+    AnchorSideLeft.Control = Button1
+    AnchorSideLeft.Side = asrBottom
+    AnchorSideRight.Control = Owner
+    AnchorSideRight.Side = asrBottom
+    AnchorSideBottom.Control = Owner
+    AnchorSideBottom.Side = asrBottom
+    Left = 146
+    Height = 23
+    Top = 84
+    Width = 298
+    Anchors = [akLeft, akRight, akBottom]
+    BorderSpacing.Around = 10
+    ItemHeight = 15
+    OnChange = ComboBox1Change
+    TabOrder = 2
+    Text = 'ComboBox1'
+  end
+end
